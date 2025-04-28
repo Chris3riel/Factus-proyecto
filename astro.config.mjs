@@ -7,5 +7,4 @@ export default defineConfig({
   },
   output: 'static',
   outDir: './docs',
-  base: '/Factus-proyecto',
 });

@@ -1,22 +1,387 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.7.3"><title>Astro Basics</title><link rel="stylesheet" href="/Factus-proyecto/_astro/index.DOiwkKJc.css">
-<style>html,body{margin:0;width:100%;height:100%}
-.gradient-bg[data-astro-cid-wpdkkdke]{background:linear-gradient(135deg,#667eea,#764ba2)}
-</style></head> <body data-astro-cid-sckkx6r4>   <html lang="es" class="h-full bg-gray-50" data-astro-cid-wpdkkdke> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Facturación - Login</title></head> <body class="h-full" data-astro-cid-wpdkkdke> <div class="flex min-h-full" data-astro-cid-wpdkkdke> <!-- Sección izquierda con imagen --> <div class="hidden lg:block relative w-0 flex-1" data-astro-cid-wpdkkdke> <div class="absolute inset-0 gradient-bg" data-astro-cid-wpdkkdke> <div class="absolute inset-0 bg-black opacity-30" data-astro-cid-wpdkkdke></div> <div class="relative h-full flex items-center justify-center p-12" data-astro-cid-wpdkkdke> <div class="text-white max-w-md" data-astro-cid-wpdkkdke> <h2 class="text-3xl font-bold mb-4" data-astro-cid-wpdkkdke>Sistema de Gestión de Facturas</h2> <p class="text-lg opacity-90" data-astro-cid-wpdkkdke>
-Accede a tu panel de control para gestionar facturas, clientes y reportes financieros.
-</p> <div class="mt-8 flex space-x-4" data-astro-cid-wpdkkdke> <div class="flex items-center" data-astro-cid-wpdkkdke> <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-wpdkkdke> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" data-astro-cid-wpdkkdke></path> </svg> <span data-astro-cid-wpdkkdke>Seguro</span> </div> <div class="flex items-center" data-astro-cid-wpdkkdke> <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-wpdkkdke> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" data-astro-cid-wpdkkdke></path> </svg> <span data-astro-cid-wpdkkdke>Rápido</span> </div> </div> </div> </div> </div> </div> <!-- Sección derecha con formulario --> <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24" data-astro-cid-wpdkkdke> <div class="mx-auto w-full max-w-md" data-astro-cid-wpdkkdke> <div class="text-center" data-astro-cid-wpdkkdke> <!--<img class="h-12 w-auto mx-auto" src="/logo.svg" alt="Logo empresa" /> --> <h2 class="mt-6 text-3xl font-extrabold text-gray-900" data-astro-cid-wpdkkdke>
-Iniciar Sesión
-</h2> <p class="mt-2 text-sm text-gray-600" data-astro-cid-wpdkkdke>
-Ingresa tus credenciales para acceder al sistema
-</p> </div> <div class="mt-8" data-astro-cid-wpdkkdke> <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10" data-astro-cid-wpdkkdke> <form class="space-y-6" action="#" method="POST" data-astro-cid-wpdkkdke> <div data-astro-cid-wpdkkdke> <label for="email" class="block text-sm font-medium text-gray-700" data-astro-cid-wpdkkdke>
-Correo electrónico
-</label> <div class="mt-1 relative rounded-md shadow-sm" data-astro-cid-wpdkkdke> <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-astro-cid-wpdkkdke> <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" data-astro-cid-wpdkkdke> <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" data-astro-cid-wpdkkdke></path> <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" data-astro-cid-wpdkkdke></path> </svg> </div> <input id="email" name="email" type="email" autocomplete="email" value="sandbox@factus.com.co" required class="py-2 pl-10 block w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="usuario@empresa.com" data-astro-cid-wpdkkdke> </div> </div> <div data-astro-cid-wpdkkdke> <label for="password" class="block text-sm font-medium text-gray-700" data-astro-cid-wpdkkdke>
-Contraseña
-</label> <div class="mt-1 relative rounded-md shadow-sm" data-astro-cid-wpdkkdke> <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-astro-cid-wpdkkdke> <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-wpdkkdke> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" data-astro-cid-wpdkkdke></path> </svg> </div> <input id="password" name="password" type="password" value="sandbox2024%" autocomplete="current-password" required class="py-2 pl-10 block w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="••••••••" data-astro-cid-wpdkkdke> </div> </div> <div class="flex items-center justify-between" data-astro-cid-wpdkkdke> <div class="flex items-center" data-astro-cid-wpdkkdke> <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" data-astro-cid-wpdkkdke> <label for="remember-me" class="ml-2 block text-sm text-gray-900" data-astro-cid-wpdkkdke>
-Recordar sesión
-</label> </div> <div class="text-sm" data-astro-cid-wpdkkdke> <a href="#" class="font-medium text-blue-600 hover:text-blue-500" data-astro-cid-wpdkkdke>
-¿Olvidaste tu contraseña?
-</a> </div> </div> <div data-astro-cid-wpdkkdke> <a type="button" href="/dashboard" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out" data-astro-cid-wpdkkdke>
-Ingresar al sistema
-</a> </div> </form> <div class="mt-6" data-astro-cid-wpdkkdke> <div class="relative" data-astro-cid-wpdkkdke> <div class="absolute inset-0 flex items-center" data-astro-cid-wpdkkdke> <div class="w-full border-t border-gray-300" data-astro-cid-wpdkkdke></div> </div> <div class="relative flex justify-center text-sm" data-astro-cid-wpdkkdke> <span class="px-2 bg-white text-gray-500" data-astro-cid-wpdkkdke>
-O ingresa con
-</span> </div> </div> <div class="mt-6 grid grid-cols-2 gap-3" data-astro-cid-wpdkkdke> <div data-astro-cid-wpdkkdke> <a href="#" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50" data-astro-cid-wpdkkdke> <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" data-astro-cid-wpdkkdke> <path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972-3.332 0-6.033-2.701-6.033-6.032s2.701-6.032 6.033-6.032c1.498 0 2.866 0.549 3.921 1.453l2.814-2.814c-1.784-1.667-4.146-2.676-6.735-2.676-5.522 0-10 4.477-10 10s4.478 10 10 10c8.396 0 10-7.524 10-10 0-0.67-0.069-1.325-0.189-1.955h-9.811z" data-astro-cid-wpdkkdke></path> </svg> <span class="ml-2" data-astro-cid-wpdkkdke>Google</span> </a> </div> <div data-astro-cid-wpdkkdke> <a href="#" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50" data-astro-cid-wpdkkdke> <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16" data-astro-cid-wpdkkdke> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-wpdkkdke></path> </svg> <span class="ml-2" data-astro-cid-wpdkkdke>Github</span> </a> </div> </div> </div> </div> </div> </div> </div> </div> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const r=document.getElementById("loginForm"),t=document.getElementById("error-message"),o=document.getElementById("success-message");r.addEventListener("submit",async d=>{d.preventDefault();const a=new FormData(r),c=a.get("username"),i=a.get("password"),l="9de7fa7f-1e0e-4384-a879-4d3f314eb2d8",m="0Vt17b8wsK8an6UV0FNqsTw4BXjP2P2q0Ek8RzrL",p="password",e=new FormData;e.append("grant_type",p),e.append("client_id",l),e.append("client_secret",m),e.append("username",c),e.append("password",i);try{const n=await fetch("https://api-sandbox.factus.com.co/oauth/token",{method:"POST",headers:{Accept:"application/json"},body:e}),s=await n.json();n.ok?(console.log("Token obtenido:",s),o.textContent="¡Inicio de sesión exitoso!",o.classList.remove("hidden"),t.classList.add("hidden"),localStorage.setItem("accessToken",s.access_token),localStorage.setItem("refreshToken",s.refresh_token),window.location.href="/dashboard"):(console.error("Error al obtener el token:",s),t.textContent=s.error||"Error al iniciar sesión. Por favor, verifica tus credenciales.",t.classList.remove("hidden"),o.classList.add("hidden"))}catch(n){console.error("Error de red:",n),t.textContent="Ocurrió un error de red. Inténtalo de nuevo más tarde.",t.classList.remove("hidden"),o.classList.add("hidden")}})});</script> </body> </html>  </body></html>
+<!DOCTYPE html>
+<html lang="en" data-astro-cid-sckkx6r4>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content="Astro v5.7.3" />
+    <title>Astro Basics</title>
+    <!--<link rel="stylesheet" href="/_astro/index.DOiwkKJc.css" />-->
+    <link rel="stylesheet" href="../docs/_astro/index.DOiwkKJc.css">
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .gradient-bg[data-astro-cid-wpdkkdke] {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+    </style>
+  </head>
+  <body data-astro-cid-sckkx6r4>
+    <div lang="es" class="h-full bg-gray-50" data-astro-cid-wpdkkdke>
+      <header data-astro-cid-wpdkkdke></header>
+      <div class="h-full" data-astro-cid-wpdkkdke>
+        <div class="flex min-h-full" data-astro-cid-wpdkkdke>
+          <!-- Sección izquierda con imagen -->
+          <div
+            class="hidden lg:block relative w-0 flex-1"
+            data-astro-cid-wpdkkdke
+          >
+            <div class="absolute inset-0 gradient-bg" data-astro-cid-wpdkkdke>
+              <div
+                class="absolute inset-0 bg-black opacity-30"
+                data-astro-cid-wpdkkdke
+              ></div>
+              <div
+                class="relative h-full flex items-center justify-center p-12"
+                data-astro-cid-wpdkkdke
+              >
+                <div class="text-white max-w-md" data-astro-cid-wpdkkdke>
+                  <h2 class="text-3xl font-bold mb-4" data-astro-cid-wpdkkdke>
+                    Sistema de Gestión de Facturas
+                  </h2>
+                  <p class="text-lg opacity-90" data-astro-cid-wpdkkdke>
+                    Accede a tu panel de control para gestionar facturas,
+                    clientes y reportes financieros.
+                  </p>
+                  <div class="mt-8 flex space-x-4" data-astro-cid-wpdkkdke>
+                    <div class="flex items-center" data-astro-cid-wpdkkdke>
+                      <svg
+                        class="w-6 h-6 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        data-astro-cid-wpdkkdke
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          data-astro-cid-wpdkkdke
+                        ></path>
+                      </svg>
+                      <span data-astro-cid-wpdkkdke>Seguro</span>
+                    </div>
+                    <div class="flex items-center" data-astro-cid-wpdkkdke>
+                      <svg
+                        class="w-6 h-6 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        data-astro-cid-wpdkkdke
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                          data-astro-cid-wpdkkdke
+                        ></path>
+                      </svg>
+                      <span data-astro-cid-wpdkkdke>Rápido</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sección derecha con formulario -->
+          <div
+            class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24"
+            data-astro-cid-wpdkkdke
+          >
+            <div class="mx-auto w-full max-w-md" data-astro-cid-wpdkkdke>
+              <div class="text-center" data-astro-cid-wpdkkdke>
+                <!--<img class="h-12 w-auto mx-auto" src="/logo.svg" alt="Logo empresa" /> -->
+                <h2
+                  class="mt-6 text-3xl font-extrabold text-gray-900"
+                  data-astro-cid-wpdkkdke
+                >
+                  Iniciar Sesión
+                </h2>
+                <p class="mt-2 text-sm text-gray-600" data-astro-cid-wpdkkdke>
+                  Ingresa tus credenciales para acceder al sistema
+                </p>
+              </div>
+              <div class="mt-8" data-astro-cid-wpdkkdke>
+                <div
+                  class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10"
+                  data-astro-cid-wpdkkdke
+                >
+                  <form
+                    class="space-y-6"
+                    action="#"
+                    method="POST"
+                    data-astro-cid-wpdkkdke
+                  >
+                    <div data-astro-cid-wpdkkdke>
+                      <label
+                        for="email"
+                        class="block text-sm font-medium text-gray-700"
+                        data-astro-cid-wpdkkdke
+                      >
+                        Correo electrónico
+                      </label>
+                      <div
+                        class="mt-1 relative rounded-md shadow-sm"
+                        data-astro-cid-wpdkkdke
+                      >
+                        <div
+                          class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                          data-astro-cid-wpdkkdke
+                        >
+                          <svg
+                            class="h-5 w-5 text-gray-400"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            data-astro-cid-wpdkkdke
+                          >
+                            <path
+                              d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                              data-astro-cid-wpdkkdke
+                            ></path>
+                            <path
+                              d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                              data-astro-cid-wpdkkdke
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          autocomplete="email"
+                          value="sandbox@factus.com.co"
+                          required
+                          class="py-2 pl-10 block w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          placeholder="usuario@empresa.com"
+                          data-astro-cid-wpdkkdke
+                        />
+                      </div>
+                    </div>
+                    <div data-astro-cid-wpdkkdke>
+                      <label
+                        for="password"
+                        class="block text-sm font-medium text-gray-700"
+                        data-astro-cid-wpdkkdke
+                      >
+                        Contraseña
+                      </label>
+                      <div
+                        class="mt-1 relative rounded-md shadow-sm"
+                        data-astro-cid-wpdkkdke
+                      >
+                        <div
+                          class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                          data-astro-cid-wpdkkdke
+                        >
+                          <svg
+                            class="h-5 w-5 text-gray-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            data-astro-cid-wpdkkdke
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                              data-astro-cid-wpdkkdke
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          id="password"
+                          name="password"
+                          type="password"
+                          value="sandbox2024%"
+                          autocomplete="current-password"
+                          required
+                          class="py-2 pl-10 block w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          placeholder="••••••••"
+                          data-astro-cid-wpdkkdke
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between"
+                      data-astro-cid-wpdkkdke
+                    >
+                      <div class="flex items-center" data-astro-cid-wpdkkdke>
+                        <input
+                          id="remember-me"
+                          name="remember-me"
+                          type="checkbox"
+                          class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                          data-astro-cid-wpdkkdke
+                        />
+                        <label
+                          for="remember-me"
+                          class="ml-2 block text-sm text-gray-900"
+                          data-astro-cid-wpdkkdke
+                        >
+                          Recordar sesión
+                        </label>
+                      </div>
+                      <div class="text-sm" data-astro-cid-wpdkkdke>
+                        <a
+                          href="#"
+                          class="font-medium text-blue-600 hover:text-blue-500"
+                          data-astro-cid-wpdkkdke
+                        >
+                          ¿Olvidaste tu contraseña?
+                        </a>
+                      </div>
+                    </div>
+                    <div data-astro-cid-wpdkkdke>
+                      <a
+                        type="button"
+                        
+                        href="/docs/dashboard/index.html"
+                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                        data-astro-cid-wpdkkdke
+                      >
+                        Ingresar al sistema
+                      </a>
+                    </div>
+                  </form>
+                  <div class="mt-6" data-astro-cid-wpdkkdke>
+                    <div class="relative" data-astro-cid-wpdkkdke>
+                      <div
+                        class="absolute inset-0 flex items-center"
+                        data-astro-cid-wpdkkdke
+                      >
+                        <div
+                          class="w-full border-t border-gray-300"
+                          data-astro-cid-wpdkkdke
+                        ></div>
+                      </div>
+                      <div
+                        class="relative flex justify-center text-sm"
+                        data-astro-cid-wpdkkdke
+                      >
+                        <span
+                          class="px-2 bg-white text-gray-500"
+                          data-astro-cid-wpdkkdke
+                        >
+                          O ingresa con
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="mt-6 grid grid-cols-2 gap-3"
+                      data-astro-cid-wpdkkdke
+                    >
+                      <div data-astro-cid-wpdkkdke>
+                        <a
+                          href="#"
+                          class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+                          data-astro-cid-wpdkkdke
+                        >
+                          <svg
+                            class="w-5 h-5"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                            data-astro-cid-wpdkkdke
+                          >
+                            <path
+                              d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972-3.332 0-6.033-2.701-6.033-6.032s2.701-6.032 6.033-6.032c1.498 0 2.866 0.549 3.921 1.453l2.814-2.814c-1.784-1.667-4.146-2.676-6.735-2.676-5.522 0-10 4.477-10 10s4.478 10 10 10c8.396 0 10-7.524 10-10 0-0.67-0.069-1.325-0.189-1.955h-9.811z"
+                              data-astro-cid-wpdkkdke
+                            ></path>
+                          </svg>
+                          <span class="ml-2" data-astro-cid-wpdkkdke
+                            >Google</span
+                          >
+                        </a>
+                      </div>
+                      <div data-astro-cid-wpdkkdke>
+                        <a
+                          href="#"
+                          class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+                          data-astro-cid-wpdkkdke
+                        >
+                          <svg
+                            class="w-5 h-5"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            data-astro-cid-wpdkkdke
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                              data-astro-cid-wpdkkdke
+                            ></path>
+                          </svg>
+                          <span class="ml-2" data-astro-cid-wpdkkdke
+                            >Github</span
+                          >
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="module">
+          document.addEventListener("DOMContentLoaded", () => {
+            const r = document.getElementById("loginForm"),
+              t = document.getElementById("error-message"),
+              o = document.getElementById("success-message");
+            r.addEventListener("submit", async (d) => {
+              d.preventDefault();
+              const a = new FormData(r),
+                c = a.get("username"),
+                i = a.get("password"),
+                l = "9de7fa7f-1e0e-4384-a879-4d3f314eb2d8",
+                m = "0Vt17b8wsK8an6UV0FNqsTw4BXjP2P2q0Ek8RzrL",
+                p = "password",
+                e = new FormData();
+              e.append("grant_type", p),
+                e.append("client_id", l),
+                e.append("client_secret", m),
+                e.append("username", c),
+                e.append("password", i);
+              try {
+                const n = await fetch(
+                    "https://api-sandbox.factus.com.co/oauth/token",
+                    {
+                      method: "POST",
+                      headers: { Accept: "application/json" },
+                      body: e,
+                    }
+                  ),
+                  s = await n.json();
+                n.ok
+                  ? (console.log("Token obtenido:", s),
+                    (o.textContent = "¡Inicio de sesión exitoso!"),
+                    o.classList.remove("hidden"),
+                    t.classList.add("hidden"),
+                    localStorage.setItem("accessToken", s.access_token),
+                    localStorage.setItem("refreshToken", s.refresh_token),
+                    (window.location.href = "/dashboard"))
+                  : (console.error("Error al obtener el token:", s),
+                    (t.textContent =
+                      s.error ||
+                      "Error al iniciar sesión. Por favor, verifica tus credenciales."),
+                    t.classList.remove("hidden"),
+                    o.classList.add("hidden"));
+              } catch (n) {
+                console.error("Error de red:", n),
+                  (t.textContent =
+                    "Ocurrió un error de red. Inténtalo de nuevo más tarde."),
+                  t.classList.remove("hidden"),
+                  o.classList.add("hidden");
+              }
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

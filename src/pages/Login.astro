@@ -1,20 +1,16 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 ---
 
-<!DOCTYPE html>
-<html lang="es" class="h-full bg-gray-50">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Facturación - Login</title>
+<div lang="es" class="h-full bg-gray-50">
+<header>
   <style>
     .gradient-bg {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
   </style>
-</head>
-<body class="h-full">
+</header>
+<div class="h-full">
   <div class="flex min-h-full">
     <!-- Sección izquierda con imagen -->
     <div class="hidden lg:block relative w-0 flex-1">
@@ -206,7 +202,6 @@ import '../styles/global.css';
 
             // Redirecciona a la ruta deseada
             window.location.href = '/dashboard'; // Reemplaza '/dashboard' con la ruta a la que quieres redirigir
-
           } else {
             console.error('Error al obtener el token:', data);
             errorMessage.textContent = data.error || 'Error al iniciar sesión. Por favor, verifica tus credenciales.';
@@ -222,5 +217,5 @@ import '../styles/global.css';
       });
     });
   </script>
-</body>
-</html>
+</div>
+</div>
